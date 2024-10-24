@@ -28,6 +28,10 @@ int cube(int a){
 	return a*a*a;
 }
 
+float inv(int a){
+	return 1.0/a;
+}
+
 int main() {
     int a, b;
     char operation;
@@ -82,7 +86,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of iverse of %d is %f\n", a, inv(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
